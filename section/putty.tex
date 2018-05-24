@@ -61,24 +61,10 @@ Aplikasi yang terkenal di protokol ini yaitu untuk akses ke akun shell di sistem
 \label{ssh}
 \end{figure}
 
-\subsection {Manfaat SSH (Secure Shell)}
-
-Manfaat menggunakan SSH
-
-Manfaat menggunakan akun SSH (Secure Shell) dapat meningkatkan keamanan data / file yang ada di komputer Anda ketika Anda mengakses internet di komputer Anda (PC) karena SSH (Secure Shell) akun sebagai perantara koneksi internet Anda. SSH akan memberikan enkripsi pada semua data yang dapat dibaca, kirimkan saja ke server lain.
-Selain enkripsi data, SSH (Secure Shell) juga dapat memiliki kemampuan untuk melakukan Penerusan Pelabuhan yang memungkinkan kita untuk mendapatkan manfaat sebagai berikut:
-
-1. Hubungkan aplikasi ke TCP (misalnya: server web, server email, server FTP) dengan lebih aman. Tentu saja hindari hacking alamat TCP di komputer Anda (pc).
-2. Hubungkan dengan mengirim firewall atau proxy lokal.
-
  
 \subsection {Pengertian Rlogin (Remote Login)}
 
 Rlogin atau Remote Login merupakan salah satu dari berbagai macam layanan internet yang memungkinkan pengguna internet untuk mengakases (masuk)  sebuah host dalam lingkup jaringan internet, seorang user dapat mengoperasikan sebuah host dari jarak jauh tanpa harus kontak secara fisik dengan host. Di sana user dapat melakukan maintenance atau pemeliharaan, menjalankan sebuah program, bahkan menginstall program baru di host.
-
-\subsection {Pengertian Telnet}
-Telnet adalah salah satu protocol yang membuat pengguna nya dapat login pada sistem komputer lain dari jarak jauh, dan juga penggunanya dapat mengakses file atau program didalam nya. Telnet digunakan untuk login ke komputer lain di satu jaringan internet yang sama dan dapat melakukan akses pada pelayanan umum pada komputer tersebut, termasuk pada berbagai macam akses database.
-
 
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/rlogin.png}}
@@ -103,7 +89,11 @@ Mengatur Koneksi Putty :
 9. Lalu masukkan password SSH dan akan nampak ketikan password di terminal tidak terketik. Perlu diingatkan aplikasi terminal tetap menerima ketikan anda walaupun tidak terlihat. Jika masih ragu untuk memasukan password, gunakan Ctrl+C pada bagian kata yang di cap untuk memasukkan password lalu Ctrl+V.
 10. Jika sudah memasukkan username dan password SSH, maka anda sudah berhasil login ke server melalui SSH.
 
-\subsection { Kegunaan SSH }
+SSH bermanfaat untuk meningkatkan data di komputer melalui internet, karena untuk dengan terhubung ke internet kita menggunakan SSH, SSH akan menyediakan semua data yang bisa dibaca, cukup dengan masuk ke server lain.
+Selain untuk enkripsi data, SSH juga memiliki kemampuan untuk melakukan Port Forwarding yang akan kita gunakan sebagai berikut:
 
-SSH dirancang untuk menggantikan suatu protokol telnet dan FTP.SSH merupakan suatu produk yang dirancang untuk melakukan beberapa hal, dan yang kebanyakan berupa penciptaan tunnel antar host. di dalam dua hal penting tersebut SSH yaitu console login yang menggantikan telentsedangkan secure filetransfer menggantikan FTP tetapi dengan SSH anda juga bisa memperoleh kemampuan berbentuk source tunnel untuk melewatkan HTTP/FTP/POP3 dan lain sebagainya.
+1. Menghubungkan aplikasi TCP (misalnya: server web, server email, server FTP) dengan lebih aman (aman)
+2.Terhubung dengan firewall atau proxy lokal.
+Manfaat kedua diatas itulah yang sering dicari oleh para pengguna Internet dan memanfaatkannya untuk kepentingan akses internet. menggunakan Akun SSH Kita bisa mengelola VPS untuk menjadi hosting ataupun fungsionalitas yang lain.
+
 
