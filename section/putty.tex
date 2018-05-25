@@ -47,34 +47,6 @@ PuTTY memberikan beberapa keunggulan yang berbeda, terutama dari jarak jauh. Leb
 \label{putty}
 \end{figure}
 
-
-\subsection {Pengertian SSH(Secure Shell)}
-
-Menurut pendapat \cite{Jusuf.Heni2015Penggunaan Secure Shell} SSH adalah suatu kriptografi yang digunakan untuk mengkomunikasikan data yang ada pada perangkat jaringannya untuk membuatnya lebih aman lagi. Dalam konsep menggunkan SSH ini harus di dukung oleh suatu server atau di dalam computer. Pada akun SSH ini dirancang untuk digunakan sebagai pola piker Telnet dan shell pada jarak jauh yang tidak aman, yang mengirimkan suatu informasi terutama pada kata sandinya dalam bentuk yang sederhanan dan mudah untuk disadap. Enkripsi disediakan oleh SSH untuk memberikan suatu kerahasiaan dan integritas data melalui jaringan tidak aman seperti internet.
-
-SSH yaitu merupakan protokol jaringan yang menggunakan kriptografi atau yang biasa dikenal sebagai secure shell untuk komunikasi data yang aman. Dalam konsep menggunakan SSH ini harus didukung oleh server atau perangkat komputer yang bertukar data. Buka server SSH Server dari server samping dan SSH client untuk komputer penerima atau klien.
-Aplikasi yang terkenal di protokol ini yaitu untuk akses ke akun shell di sistem operasi sama seperti unix, SSH dirancang sebagai telnet yang tidak aman dan pola pikir shell jarak jauh, yang mengirimkan informasi terutama kata sandi dalam bentuk teks sederhana yang mudah diketuk. Protokol ini dibedakan menjadi 2 versi utama yang dikenal sebagai SSH 1 dan SSH 2. Enkripsi yang digunakan oleh SSH bertujuan untuk memberikan rahasia dan integritas data melalui jaringan yang tidak aman seperti internet. 
-
-\begin{figure}[ht]
-\centerline{\includegraphics[width=1\textwidth]{figures/ssh.gif}}
-\caption{gambar ssh.}
-\label{ssh}
-\end{figure}
-
- 
-\subsection {Pengertian Rlogin (Remote Login)}
-
-Rlogin atau Remote Login merupakan salah satu dari berbagai macam layanan internet yang memungkinkan pengguna internet untuk mengakases (masuk)  sebuah host dalam lingkup jaringan internet, seorang user dapat mengoperasikan sebuah host dari jarak jauh tanpa harus kontak secara fisik dengan host. Di sana user dapat melakukan maintenance atau pemeliharaan, menjalankan sebuah program, bahkan menginstall program baru di host.
-
-Protokol yang sering di gunakan untuk keperluan Rlogin adalah Telnet (Telecommunication network) yang berjalan pada port 23. Namun Rlogin lewat Telnet memiliki resiko keamanan karena data yang dikirimkan dalam bentuk plain text (tidak dienkripsi). Untuk user / pengguna (cracker bisa di masukkan kategori pengguna) yang dapat menangkap paket pada suatu jaringan (Sniffing), bisa mengambil berbagai macam informasi mengenai host dan remote host.
-
-
-\begin{figure}[ht]
-\centerline{\includegraphics[width=1\textwidth]{figures/rlogin.png}}
-\caption{gambar rlogin.}
-\label{rlogin}
-\end{figure}
-
 \subsection {Tips menggunakan Aplikasi Putty}
 Di sini adalah Tips menggunakan Aplikasi Putty dengan mudah
 1. Unduh Aplikasi Putty di www.putty.org
@@ -91,6 +63,34 @@ Mengatur Koneksi Putty :
 8. Setelah masuk ke dalam laman awal koneksi SSH Terminal. akan di beri prompt untuk memasukkan username SSH.
 9. Lalu masukkan password SSH dan akan nampak ketikan password di terminal tidak terketik. Perlu diingatkan aplikasi terminal tetap menerima ketikan anda walaupun tidak terlihat. Jika masih ragu untuk memasukan password, gunakan Ctrl+C pada bagian kata yang di cap untuk memasukkan password lalu Ctrl+V.
 10. Jika sudah memasukkan username dan password SSH, maka anda sudah berhasil login ke server melalui SSH.
+ 
+\subsection {Pengertian Rlogin (Remote Login)}
+
+Rlogin atau Remote Login merupakan salah satu dari berbagai macam layanan internet yang memungkinkan pengguna internet untuk mengakases (masuk)  sebuah host dalam lingkup jaringan internet, seorang user dapat mengoperasikan sebuah host dari jarak jauh tanpa harus kontak secara fisik dengan host. Di sana user dapat melakukan maintenance atau pemeliharaan, menjalankan sebuah program, bahkan menginstall program baru di host.
+
+Protokol yang sering di gunakan untuk keperluan Rlogin adalah Telnet (Telecommunication network) yang berjalan pada port 23. Namun Rlogin lewat Telnet memiliki resiko keamanan karena data yang dikirimkan dalam bentuk plain text (tidak dienkripsi). Untuk user / pengguna (cracker bisa di masukkan kategori pengguna) yang dapat menangkap paket pada suatu jaringan (Sniffing), bisa mengambil berbagai macam informasi mengenai host dan remote host.
+
+
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth]{figures/rlogin.png}}
+\caption{gambar rlogin.}
+\label{rlogin}
+\end{figure}
+
+
+\subsection {Pengertian SSH(Secure Shell)}
+
+Menurut pendapat \cite{Jusuf.Heni2015Penggunaan Secure Shell} SSH adalah suatu kriptografi yang digunakan untuk mengkomunikasikan data yang ada pada perangkat jaringannya untuk membuatnya lebih aman lagi. Dalam konsep menggunkan SSH ini harus di dukung oleh suatu server atau di dalam computer. Pada akun SSH ini dirancang untuk digunakan sebagai pola piker Telnet dan shell pada jarak jauh yang tidak aman, yang mengirimkan suatu informasi terutama pada kata sandinya dalam bentuk yang sederhanan dan mudah untuk disadap. Enkripsi disediakan oleh SSH untuk memberikan suatu kerahasiaan dan integritas data melalui jaringan tidak aman seperti internet.
+
+SSH yaitu merupakan protokol jaringan yang menggunakan kriptografi atau yang biasa dikenal sebagai secure shell untuk komunikasi data yang aman. Dalam konsep menggunakan SSH ini harus didukung oleh server atau perangkat komputer yang bertukar data. Buka server SSH Server dari server samping dan SSH client untuk komputer penerima atau klien.
+Aplikasi yang terkenal di protokol ini yaitu untuk akses ke akun shell di sistem operasi sama seperti unix, SSH dirancang sebagai telnet yang tidak aman dan pola pikir shell jarak jauh, yang mengirimkan informasi terutama kata sandi dalam bentuk teks sederhana yang mudah diketuk. Protokol ini dibedakan menjadi 2 versi utama yang dikenal sebagai SSH 1 dan SSH 2. Enkripsi yang digunakan oleh SSH bertujuan untuk memberikan rahasia dan integritas data melalui jaringan yang tidak aman seperti internet. 
+
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth]{figures/ssh.gif}}
+\caption{gambar ssh.}
+\label{ssh}
+\end{figure}
+
 
 SSH bermanfaat untuk meningkatkan data di komputer melalui internet, karena untuk dengan terhubung ke internet kita menggunakan SSH, SSH akan menyediakan semua data yang bisa dibaca, cukup dengan masuk ke server lain.
 Selain untuk enkripsi data, SSH juga memiliki kemampuan untuk melakukan Port Forwarding yang akan kita gunakan sebagai berikut:
@@ -125,3 +125,11 @@ Langkah 6
 Server mendekripsi sesi yang diperoleh dari klien, mengenkripsi ulang dengan kunci publik klien, dan mengirimnya kembali ke klien untuk verifikasi.
 Langkah 7
 Pengguna mengotentikasi dirinya ke server dalam aliran data terenkripsi di kunci sesi. Sampai di sini, koneksi telah dibuat, dan klien dapat bekerja secara interaktif di server atau mentransfer file ke atau dari server. Langkah ketujuh dapat diimplementasikan dengan berbagai cara (nama pengguna, kerberos, RSA dan lainnya).
+
+\subsection {SSH,Telnet,dan Rlogin}
+
+SSH, Telnet, dan Rlogin
+
+SSH, Telnet, dan Rlogin sebenarnya memiliki fungsi yang sama: login (login) ke komputer multi-pengguna (server) dari komputer lain (klien) melalui jaringan. Sistem operasi multi-pengguna, seperti Unix dan VMS, biasanya menyediakan antarmuka pengguna langganan, yang tampak seperti 'command prompt' atau 'MS-DOS prompt' di Windows. Sistem menampilkan prompt dan kami mengetikkan perintah yang akan dijalankan oleh sistem.
+Dengan cara komunikasi client-server seperti ini, kita tidak perlu mengakses (baca: sentuh) langsung sistem komputer server. Perintah dan tanggapan dapat dikirim melalui jaringan, sehingga kami dari jarak jauh dapat memberikan perintah ke komputer lain. Bukan hanya satu komputer, bahkan lebih dari satu komputer bisa kita perintah.
+SSH, Telnet, dan Rlogin adalah protokol jaringan yang memungkinkan semuanya. Kami hanya perlu menjalankan aplikasi klien, yang akan membuat koneksi ke komputer lain sebagai server. Ini adalah jaringan komputer yang mengirim perintah dari klien ke server, dan mengembalikan respons.
