@@ -103,3 +103,22 @@ Untuk mendapatkan akun ini dan menggunakan SSH (Secure Shell), kita bisa mendapa
 
 kegunaan SSH
 SSH dirancang untuk membahas protokol telnet dan FTP. SSH adalah produk yang digunakan untuk melakukan banyak hal, paling tepat antara tunnel antar host. Dua hal penting SSH adalah login console (misalnya telnet) dan secure filetransfer (selain FTP), tetapi dengan SSH Anda juga dapat mengakses HTTP, FTP, POP3, dan hal lain melalui SSH tunel.
+
+Cara kerja SSH
+
+Kunci publik / pribadi yang masing-masing menjadi identitas SSH untuk keduanya.
+Langkah-langkah yang terhubung adalah sebagai berikut:
+Langkah 1
+Klien mengikat nomor port lokal besar dan menghubungkan ke port 22 di server.
+Langkah 2
+Klien dan server setuju untuk menggunakan sesi SSH tertentu. Ini penting karena SSH v.1 dan v.2 tidak kompatibel.
+Langkah 3
+Klien akan menjadi server dan kata kunci.
+Langkah 4
+Klien dan server ditugaskan ke algoritma yang akan digunakan (misalnya TripleDES atau IDEA).
+Langkah 5
+Klien yang terdiri dari klien dan enkripsi menggunakan server kunci pribadi mereka sendiri.
+Langkah 6
+Server mendekripsi sesi yang diperoleh dari klien, mengenkripsi ulang dengan kunci publik klien, dan mengirimnya kembali ke klien untuk verifikasi.
+Langkah 7
+Pengguna mengotentikasi dirinya ke server dalam aliran data terenkripsi di kunci sesi. Sampai di sini, koneksi telah dibuat, dan klien dapat bekerja secara interaktif di server atau mentransfer file ke atau dari server. Langkah ketujuh dapat diimplementasikan dengan berbagai cara (nama pengguna, kerberos, RSA dan lainnya).
