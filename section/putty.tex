@@ -104,28 +104,39 @@ Menggunakan Akun SSH untuk menggali koneksi internet Anda tidak menjamin peningk
 Protokol SSH (Secure Shell) memiliki banyak fungsi, selain fungsi tunneling yang sering kita gunakan, kita juga dapat menggunakan SSH (Secure Shell) untuk SFTP, SOCKS4 / 5 proxy atau kita juga dapat menggunakan untuk mengelola VPS (Virtual Private Server) atau hosting kami terutama VPS dengan OS Linux seperti CentOS. Untuk menggunakan tunneling menggunakan SSH (Secure Shell) , kita dapat menggunakan klien SSH (Secure Shell) seperti Bitvise Tunnelier atau Putty untuk sistem operasi Windows.
 Untuk mendapatkan akun ini dan menggunakan SSH (Secure Shell), kita bisa mendapatkan akun SSH (Secure Shell) secara gratis di cjb.net atau jika kami memiliki penyedia VPS (Virtual Private Server) biasanya juga menyediakan SSH untuk pengaturan VPS kami.
 
-kegunaan SSH
+\subsection {Kegunaan SSH atau Secure Shell}
 SSH dirancang untuk membahas protokol telnet dan FTP. SSH adalah produk yang digunakan untuk melakukan banyak hal, paling tepat antara tunnel antar host. Dua hal penting SSH adalah login console (misalnya telnet) dan secure filetransfer (selain FTP), tetapi dengan SSH Anda juga dapat mengakses HTTP, FTP, POP3, dan hal lain melalui SSH tunel.
 
-Cara kerja SSH
+\subsection {Cara kerja SSH atau Secure Shell}
 
 Kunci publik / pribadi yang masing-masing menjadi identitas SSH untuk keduanya.
 Langkah-langkah yang terhubung adalah sebagai berikut:
-Langkah 1
-Klien mengikat nomor port lokal besar dan menghubungkan ke port 22 di server.
-Langkah 2
-Klien dan server setuju untuk menggunakan sesi SSH tertentu. Ini penting karena SSH v.1 dan v.2 tidak kompatibel.
-Langkah 3
-Klien akan menjadi server dan kata kunci.
-Langkah 4
-Klien dan server ditugaskan ke algoritma yang akan digunakan (misalnya TripleDES atau IDEA).
-Langkah 5
-Klien yang terdiri dari klien dan enkripsi menggunakan server kunci pribadi mereka sendiri.
-Langkah 6
-Server mendekripsi sesi yang diperoleh dari klien, mengenkripsi ulang dengan kunci publik klien, dan mengirimnya kembali ke klien untuk verifikasi.
-Langkah 7
-Pengguna mengotentikasi dirinya ke server dalam aliran data terenkripsi di kunci sesi. Sampai di sini, koneksi telah dibuat, dan klien dapat bekerja secara interaktif di server atau mentransfer file ke atau dari server. Langkah ketujuh dapat diimplementasikan dengan berbagai cara (nama pengguna, kerberos, RSA dan lainnya).
 
+\begin{enumerate}
+
+	\item Langkah 1 
+	Klien mengikat nomor port lokal besar dan menghubungkan ke port 22 di server.
+
+	\item Langkah 2
+	Klien dan server setuju untuk menggunakan sesi SSH tertentu. Ini penting karena SSH v.1 dan v.2 tidak kompatibel.
+
+	\item Langkah 3
+	Klien akan menjadi server dan kata kunci.
+
+	\ietm Langkah 4
+	Klien dan server ditugaskan ke algoritma yang akan digunakan (misalnya TripleDES atau IDEA).
+
+	\item Langkah 5
+	Klien yang terdiri dari klien dan enkripsi menggunakan server kunci pribadi mereka sendiri.
+
+	\item Langkah 6
+	Server mendekripsi sesi yang diperoleh dari klien, mengenkripsi ulang dengan kunci publik klien, dan mengirimnya kembali ke klien untuk verifikasi.
+
+	\item Langkah 7
+	Pengguna mengotentikasi dirinya ke server dalam aliran data terenkripsi di kunci sesi. Sampai di sini, koneksi telah dibuat, dan klien dapat bekerja secara interaktif di server atau mentransfer file ke atau dari server. Langkah ketujuh dapat diimplementasikan dengan berbagai cara (nama pengguna, kerberos, RSA dan lainnya).
+
+\end{enumerate}
+	
 \subsection {SSH,Telnet,dan Rlogin}
 
 SSH, Telnet, dan Rlogin
@@ -159,3 +170,7 @@ Karena perkembangan jaringan komputer yang terus membaik, perintah telnet pun da
 * Mengakses server atau host secara remote
 * Mengubah komputer user menjadi komputer terminal
 * Menjalankan komputer menggunakan Telnet jarak jauh
+
+\subsection {Perbedaan Telnet Dengan SSH atau Secure Shell}
+
+Telnet (Telecommunications Network Protoco) l adalah login jarak jauh atau sistem otomatis ketika pengguna menggunakan jaringan Internet sebagai login jarak jauh yang terjadi pada jaringan Internet karena layanan dari protokol Telnet. Telnet dapat memungkinkan pengguna untuk mengakses komputer lain dari jarak jauh melalui Internet. Telnet digunakan untuk login ke komputer lain di Internet dan dapat mengakses layanan publik, termasuk berbagai database. Pengguna hanya bisa duduk di depan komputer yang terhubung ke jaringan internet. Dengan kata lain dapat dihubungkan ke komputer lain di satu gedung, satu ruangan atau bahkan di komputer di seluruh dunia. Setelah terhubung ke jaringan internet Anda di komputer maka masukan yang diberikan pada keyboard dapat langsung mengontrol ke komputer jarak jauh sebelumnya, dapat diakses ke semua layanan yang telah disediakan oleh mesin jarak jauh dan hasilnya akan ditampilkan di terminal lokal. Dengan menggunakan Telnet, pengguna dapat mengakses berbagai layanan seperti melihat katalog perpustakaan dan banyak layanan lainnya. Telnet menggunakan 2 (dua) program pada klien dan server. Program pada klien digunakan untuk meminta layanan pada server, sedangkan program di server akan menyediakan layanan yang diminta oleh klien.
