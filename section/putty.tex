@@ -133,3 +133,15 @@ SSH, Telnet, dan Rlogin
 SSH, Telnet, dan Rlogin sebenarnya memiliki fungsi yang sama: login (login) ke komputer multi-pengguna (server) dari komputer lain (klien) melalui jaringan. Sistem operasi multi-pengguna, seperti Unix dan VMS, biasanya menyediakan antarmuka pengguna langganan, yang tampak seperti 'command prompt' atau 'MS-DOS prompt' di Windows. Sistem menampilkan prompt dan kami mengetikkan perintah yang akan dijalankan oleh sistem.
 Dengan cara komunikasi client-server seperti ini, kita tidak perlu mengakses (baca: sentuh) langsung sistem komputer server. Perintah dan tanggapan dapat dikirim melalui jaringan, sehingga kami dari jarak jauh dapat memberikan perintah ke komputer lain. Bukan hanya satu komputer, bahkan lebih dari satu komputer bisa kita perintah.
 SSH, Telnet, dan Rlogin adalah protokol jaringan yang memungkinkan semuanya. Kami hanya perlu menjalankan aplikasi klien, yang akan membuat koneksi ke komputer lain sebagai server. Ini adalah jaringan komputer yang mengirim perintah dari klien ke server, dan mengembalikan respons.
+
+Protokol ini dapat digunakan untuk jenis sesi interaktif berbasis keyboard lainnya. Banyak papan buletin, sistem pembicara, dan MUD (ruang bawah tanah multi-pengguna) adalah dukungan (dapat diakses) dengan Telnet. Tetapi hanya sedikit dukungan SSH.
+
+Kita dapat menggunakan SSH, Telnet, atau Rlogin jika:
+
+    memiliki akun pada sistem Unix atau VMS yang akan kami akses dari tempat lain
+    ISP kami memberikan akun login di server web. Ini umumnya dikenal sebagai akun shell. Shell adalah program yang berjalan di server dan menerjemahkan perintah kami.
+    kami ingin menggunakan papan buletin, pembicara, atau sistem MUD yang dapat diakses menggunakan Telnet.
+
+Namun, kami tidak dapat menggunakan SSH, Telnet atau Rlogin jika:
+
+    hanya menggunakan Windows. Komputer Windows memiliki cara komunikasi sendiri antara Windows.
